@@ -1,5 +1,5 @@
 Flask
 Gunicorn
 os
-flask_core
+flask-core
 selenium
