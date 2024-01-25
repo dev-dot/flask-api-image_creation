@@ -1,0 +1,102 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Ergebnis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url("{{ image_url }}") center center fixed;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            height: 1080px;
+            width: 1080px;
+            /* Vollständige Höhe des Viewports */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        div.gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+            background-size: cover;
+            z-index: -1;
+
+            /* Zentriert den Text im div */
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ffffff;
+        }
+
+        .endstand {
+            position: fixed;
+            top: 50%;
+
+            /* Anpassen der Schriftgröße */
+            margin: 0;
+            /* Entfernen von zusätzlichem Margin */
+            padding: 10px;
+            /* Innenabstand für den Text */
+            display: inline-block;
+            /* Zentrieren des Texts */
+            border-radius: 10px;
+            /* Abrundung der Ecken */
+            font-family: sans-serif;
+            color: white;
+            stroke: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background-clip: text;
+            /* Background-Clip für moderne Browser */
+        }
+
+        p {
+            font-size: 3em;
+            color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .Infos {
+            position: fixed;
+            top: 70%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gradient">
+    </div>
+    <div class="endstand">
+        <h1>ENDSTAND</h1>
+    </div>
+    <div class="Infos">
+
+        <h1>{{ home_team }} vs {{ away_team }}</h1>
+        <h1>{{ score }}</h1>
+
+    </div>
+
+</body>
+
+</html>

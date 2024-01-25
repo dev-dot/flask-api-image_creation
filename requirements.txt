@@ -1,2 +1,5 @@
 Flask
 Gunicorn
+os
+flask_core
+selenium
