@@ -1,5 +1,4 @@
 Flask
 Gunicorn
-os
 flask-core
 selenium
