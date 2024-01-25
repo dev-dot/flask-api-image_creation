@@ -1,4 +1,4 @@
 Flask
 Gunicorn
-flask-core
-selenium
+Flask-Cors
+Selenium
